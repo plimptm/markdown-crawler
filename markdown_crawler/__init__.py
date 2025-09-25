@@ -242,8 +242,8 @@ def crawl(
     )
 
     logger.debug(f'Found {len(child_urls) if child_urls else 0} child URLs')
-    #move sleep here to allow faster queue handling
-    time.sleep(1)
+    #move sleep here to allow faster queue handling, and make it smaller like Chris did
+    time.sleep(0.5)
     return child_urls
 
 
